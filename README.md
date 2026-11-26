@@ -31,12 +31,64 @@ Apply the migration files of the created app to the database
 Execute Django admin using localhost and create details for 10 entries
 
 ## PROGRAM
+```
+admin.py
+
+from django.contrib import admin
+from .models import Car,CarAdmin
+
+admin.site.register(Car, CarAdmin)
+
+models.py
+
+from django.db import models
+from django.contrib import admin
+
+
+class Car(models.Model):
+
+    car_id = models.CharField(
+        max_length=20,
+        primary_key=True,
+        help_text="Car ID"
+    )
+
+    brand = models.CharField(max_length=100)
+
+    model = models.CharField(max_length=100)
+
+    year = models.IntegerField()
+
+    price = models.IntegerField()
+
+    fuel_type = models.CharField(max_length=50)
+
+    quantity = models.IntegerField()
+
+    color = models.CharField(max_length=50)
+
+    def __str__(self):
+        return self.brand + " " + self.model
+
+
+class CarAdmin(admin.ModelAdmin):
+
+    list_display = (
+        'car_id',
+        'brand',
+        'model',
+        'year',
+        'price',
+        'fuel_type',
+        'quantity',
+        'color'
+    )
 
 
 
 ## OUTPUT
 
-
+c:\Users\acer\Pictures\Screenshots\Screenshot 2026-11-26 095523.png
 
 ## RESULT
 Thus the program for creating vehicle service Database using ORM hss been executed successfully.
