@@ -83,7 +83,7 @@ class CarAdmin(admin.ModelAdmin):
         'quantity',
         'color'
     )
-
+```
 
 
 ## OUTPUT
