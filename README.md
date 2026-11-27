@@ -1,5 +1,5 @@
 # Ex02 Django ORM Web Application
-## Date: 
+## Date:27/11/2026 
 
 ## AIM
 To develop a Django Application to store and retrieve data from a Vehicle Service Database platform using Object Relational Mapping(ORM).
@@ -88,7 +88,8 @@ class CarAdmin(admin.ModelAdmin):
 
 ## OUTPUT
 
-c:\Users\acer\Pictures\Screenshots\Screenshot 2026-11-26 095523.png
+<img width="1097" height="502" alt="Screenshot 2026-11-26 095523" src="https://github.com/user-attachments/assets/89b36e16-70c9-4a03-a3eb-fd7073155da1" />
+
 
 ## RESULT
 Thus the program for creating vehicle service Database using ORM hss been executed successfully.
